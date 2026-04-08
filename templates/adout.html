@@ -1,18 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 60px;
+      min-height: 80vh;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .hero-image {
+      width: 400px;
+      height: 300px;
+      background: linear-gradient(135deg, #60a5fa, #2563eb);
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-image {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>MyBrand</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <div class="container">
-        <h1>About Page</h1>
-        <p>This is the about page of your Flask app.</p>
-
-        <a href="/">Go Back Home</a>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Build Your Dream Website</h2>
+      <p>Create modern and responsive websites with clean HTML and CSS templates.</p>
+      <a href="#" class="btn">Get Started</a>
     </div>
+    <div class="hero-image"></div>
+  </section>
 
+  <footer>
+    <p>&copy; 2026 MyBrand. All rights reserved.</p>
+  </footer>
 </body>
 </html>
