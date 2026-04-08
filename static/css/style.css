@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: blue;
+}
+
+button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
