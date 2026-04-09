@@ -1,16 +1,42 @@
 body {
-    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
-    font-family: Arial;
 }
 
 h1 {
-    color: blue;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px;
-    background-color: green;
+    padding: 10px 20px;
+    background: #4facfe;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
 }
