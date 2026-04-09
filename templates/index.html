@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <title>AI Advisor</title>
 
-    <!-- CSS link goes here -->
+    <!-- CSS LINK -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
 </head>
 <body>
 
-    <h1>Hello World</h1>
+    <div class="container">
+        <h1>AI Advisor</h1>
+
+        <form method="POST">
+            <input type="text" name="user_input" placeholder="Enter your question..." required>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if result %}
+            <div class="result">
+                <p>{{ result }}</p>
+            </div>
+        {% endif %}
+    </div>
 
 </body>
 </html>
